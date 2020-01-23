@@ -1,0 +1,6 @@
+(library
+  (name lablqml_ppx)
+  (public_name lablqml.ppx)
+  (kind ppx_rewriter)
+  (libraries
+    ocaml-migrate-parsetree))

@@ -1,10 +1,8 @@
 .PHONY: all generator lib demo rundemo test
-all: lib generator
+all: lib
 
-generator:
-	dune build ppx/ppxext/ppx_qt.exe
 lib:
-	dune build lib/lablqml.a lib/dlllablqml_stubs.so
+	dune build
 
 test: demo
 demo: all
